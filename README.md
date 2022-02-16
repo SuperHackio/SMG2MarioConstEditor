@@ -30,4 +30,5 @@ This application requires .NET 5.0. You may need to [download](https://dotnet.mi
 
 ## Video
 Here is a video with some sample edits applied.<br/>
-[![YouTube Video Link]()](https://www.youtube.com/watch?v=m-rGMPbuA1g)
+
+[![YouTube Video Link](https://user-images.githubusercontent.com/44330283/154318807-3aa449a9-2655-4100-9458-2b6ac45c0cba.png)](https://www.youtube.com/watch?v=m-rGMPbuA1g)
