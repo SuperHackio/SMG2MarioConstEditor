@@ -4,13 +4,13 @@ Thanks to 3D All-Stars, we got a header file leaked which contained 540 variable
 
 Please note that this program is ONLY for SMG2 since SMG doesnt have Constant files.
 
-Default values are referenced by Mario's parameters. So if you edit a value or load Luigi's / Yoshi's file, you will notice that differing vales are highlighted as bold text.
+Default values are referenced by Mario's parameters. So if you edit a value or load Luigi's / Yoshi's file, you will notice that differing values are highlighted as bold text.
 
 ### What do the values do?
 Plenty of things, from making Mario jump higher, run faster, or even how long Power-Ups last. But you may not find everything that your heart desires, since some mechanics are simply hardcoded.
 
 ### Would you like to help?
-Yet we don't exactly know what each value affects. So if you figure out what a value does, open a [New Issue](https://github.com/SuperHackio/SMG2MarioConstEditor/issues) and let me know!
+We don't exactly know what each value affects. So if you figure out what a value does, open a [New Issue](https://github.com/SuperHackio/SMG2MarioConstEditor/issues) and let me know!
 (I've already figured out some of the values, they have been given descriptions)
 Also since the leaked file from 3DAS was for SMG, there happen to be 14 additional parameters specifically for SMG2. They are labeled as UNKNOWN0 through UNKNOWN13.
 
