@@ -1150,8 +1150,8 @@ namespace SMG2PlayerConstEditor
 
         [Description("Unknown")]
         [Order(146)]
-        //[DefaultValue(0.992f)]
-        public float UNKNOWN0 { get; set; } //= 0.992f;
+        [DefaultValue(0.5f)]
+        public float UNKNOWN0 { get; set; } = 0.5f;
 
         [OrderedCategory(RunningWalkingCategoryName, 20)]
 
@@ -2432,50 +2432,50 @@ namespace SMG2PlayerConstEditor
 
         [Description("Unknown")]
         [Order(321)]
-        //[DefaultValue(14f)]
-        public float UNKNOWN1 { get; set; }// = 14f;
+        [DefaultValue(5f)]
+        public float UNKNOWN1 { get; set; } = 5f;
 
         [OrderedCategory(SwimCategoryName, 33)]
 
         [Description("Unknown")]
         [Order(321)]
-        //[DefaultValue(14f)]
-        public float UNKNOWN2 { get; set; }// = 14f;
+        [DefaultValue(8f)]
+        public float UNKNOWN2 { get; set; } = 8f;
 
         [OrderedCategory(SwimCategoryName, 33)]
 
         [Description("Unknown")]
         [Order(321)]
-        //[DefaultValue(14f)]
-        public float UNKNOWN3 { get; set; }// = 14f;
+        [DefaultValue(10f)]
+        public float UNKNOWN3 { get; set; } = 10f;
 
         [OrderedCategory(SwimCategoryName, 33)]
 
         [Description("Unknown")]
         [Order(321)]
-        //[DefaultValue(14f)]
-        public float UNKNOWN4 { get; set; }// = 14f;
+        [DefaultValue(7f)]
+        public float UNKNOWN4 { get; set; } = 7f;
 
         [OrderedCategory(SwimCategoryName, 33)]
 
         [Description("Unknown")]
         [Order(321)]
-        //[DefaultValue(14f)]
-        public float UNKNOWN5 { get; set; }// = 14f;
+        [DefaultValue(7f)]
+        public float UNKNOWN5 { get; set; } = 7f;
 
         [OrderedCategory(SwimCategoryName, 33)]
 
         [Description("Unknown")]
         [Order(321)]
-        //[DefaultValue(14f)]
-        public float UNKNOWN6 { get; set; }// = 14f;
+        [DefaultValue(14f)]
+        public float UNKNOWN6 { get; set; } = 14f;
 
         [OrderedCategory(SwimCategoryName, 33)]
 
         [Description("Unknown")]
         [Order(321)]
-        //[DefaultValue(14f)]
-        public float UNKNOWN7 { get; set; }// = 14f;
+        [DefaultValue(12f)]
+        public float UNKNOWN7 { get; set; } = 14f;
 
         [OrderedCategory(SwimCategoryName, 33)]
 
@@ -2582,15 +2582,15 @@ namespace SMG2PlayerConstEditor
 
         [Description("Unknown")]
         [Order(335)]
-        //[DefaultValue(1f)]
-        public float UNKNOWN8 { get; set; }// = 1f;
+        [DefaultValue(0.06f)]
+        public float UNKNOWN8 { get; set; } = 0.06f;
 
         [OrderedCategory(SwimCategoryName, 33)]
 
         [Description("Unknown")]
         [Order(335)]
-        //[DefaultValue(1f)]
-        public float UNKNOWN9 { get; set; }// = 1f;
+        [DefaultValue(0.6f)]
+        public float UNKNOWN9 { get; set; } = 0.6f;
 
 
         [OrderedCategory(SwimCategoryName, 33)]
@@ -2905,8 +2905,8 @@ namespace SMG2PlayerConstEditor
 
         [Description("Unknown")]
         [Order(376)]
-        //[DefaultValue((ushort)30)]
-        public ushort UNKNOWN10 { get; set; }// = 30;
+        [DefaultValue((ushort)60)]
+        public ushort UNKNOWN10 { get; set; } = 60;
 
         [OrderedCategory(SwimSpinCategoryName, 37)]
 
@@ -2941,15 +2941,15 @@ namespace SMG2PlayerConstEditor
 
         [Description("Unknown")]
         [Order(380)]
-        //[DefaultValue(0.1f)]
-        public float UNKNOWN11 { get; set; }// = 0.1f;
+        [DefaultValue(1f)]
+        public float UNKNOWN11 { get; set; } = 1f;
 
         [OrderedCategory(SwimSpinCategoryName, 37)]
 
         [Description("Unknown")]
         [Order(380)]
-        //[DefaultValue(0.1f)]
-        public float UNKNOWN12 { get; set; }// = 0.1f;
+        [DefaultValue(1f)]
+        public float UNKNOWN12 { get; set; } = 1f;
 
 
 
