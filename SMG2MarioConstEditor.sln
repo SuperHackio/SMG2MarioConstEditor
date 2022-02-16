@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMG2MarioConstEditor", "SMG2MarioConstEditor\SMG2MarioConstEditor.csproj", "{9719BCC3-5795-425F-BE01-71A36C978FD0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9719BCC3-5795-425F-BE01-71A36C978FD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9719BCC3-5795-425F-BE01-71A36C978FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9719BCC3-5795-425F-BE01-71A36C978FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9719BCC3-5795-425F-BE01-71A36C978FD0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E44B6499-4D21-42E6-B56D-FA4C5477A08E}
+	EndGlobalSection
+EndGlobal
