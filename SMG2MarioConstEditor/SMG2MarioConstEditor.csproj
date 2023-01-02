@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net7.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <Authors>Super Hackio</Authors>
     <Company>Super Hackio Incorporated</Company>
@@ -10,6 +10,7 @@
     <Copyright>2022 Super Hackio Incorporated</Copyright>
     <PackageId>SMG2MarioConstEditor</PackageId>
     <Product>SMG2 MarioConst Editor</Product>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
 </Project>

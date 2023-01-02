@@ -1,9 +1,4 @@
-﻿using System;
-using System.Linq;
-using System.IO;
-using System.Drawing;
-
-namespace SMG2PlayerConstEditor
+﻿namespace SMG2PlayerConstEditor
 {
     public static class StreamEx
     {

@@ -1,10 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OrderedPropertyGrid;
 using System.ComponentModel;
-using OrderedPropertyGrid;
-using System.IO;
-using System.Drawing;
 
 namespace SMG2PlayerConstEditor
 {
