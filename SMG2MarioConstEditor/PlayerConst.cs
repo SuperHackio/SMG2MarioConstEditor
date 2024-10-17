@@ -2411,14 +2411,15 @@ namespace SMG2PlayerConstEditor
 
         [OrderedCategory(SwimCategoryName, 33)]
 
-        [Description("Unknown")]
+        [DisplayName("Red Shell Swim Speed & Flying Star Speed")]
+        [Description("For some reason this value controls both")]
         [Order(320)]
         [DefaultValue(18f)]
         public float SwimFrontJetSpeed { get; set; } = 18f;
 
         [OrderedCategory(SwimCategoryName, 33)]
 
-        [Description("Unknown")]
+        [Description("Green Shell Swim Speed")]
         [Order(321)]
         [DefaultValue(14f)]
         public float SwimFrontJetSpeedSlow { get; set; } = 14f;
@@ -2680,6 +2681,7 @@ namespace SMG2PlayerConstEditor
 
         [OrderedCategory(TurtleCategoryName, 34)]
 
+        [DisplayName("Green Shell Up/Down rotation sharpness")]
         [Description("Unknown")]
         [Order(348)]
         [DefaultValue(0.4f)]
@@ -2687,6 +2689,7 @@ namespace SMG2PlayerConstEditor
 
         [OrderedCategory(TurtleCategoryName, 34)]
 
+        [DisplayName("Red Shell Up/Down rotation sharpness")]
         [Description("Unknown")]
         [Order(349)]
         [DefaultValue(0.35f)]
@@ -2701,14 +2704,16 @@ namespace SMG2PlayerConstEditor
 
         [OrderedCategory(TurtleCategoryName, 34)]
 
-        [Description("Unknown")]
+        [DisplayName("Wall recoil speed")]
+        [Description("Swam into a wall holding a koopa shell? This value controls the rebound.")]
         [Order(351)]
         [DefaultValue(0.1f)]
         public float TurboReductionHitWall { get; set; } = 0.1f;
 
         [OrderedCategory(TurtleCategoryName, 34)]
 
-        [Description("Unknown")]
+        [DisplayName("Floor recoil speed")]
+        [Description("Swam into a floor holding a koopa shell? This value controls the rebound.")]
         [Order(352)]
         [DefaultValue(0.995f)]
         public float TurboReductionHitFloor { get; set; } = 0.995f;
@@ -2905,6 +2910,7 @@ namespace SMG2PlayerConstEditor
 
         [OrderedCategory(SwimSpinCategoryName, 37)]
 
+        [DisplayName("Underwater Spin Speed")]
         [Description("Unknown")]
         [Order(377)]
         [DefaultValue(0.7f)]
