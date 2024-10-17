@@ -25,7 +25,7 @@ Also since the leaked file from 3DAS was for SMG, there happen to be 14 addition
 8. Run the game
 
 ## System Requirements
-This application requires .NET 5.0. You may need to [download](https://dotnet.microsoft.com/en-us/download/dotnet/5.0/runtime?) and install it if you haven't already.
+This application requires .NET 8.0. You may need to [download](https://dotnet.microsoft.com/en-us/download/dotnet/8.0/runtime?) and install it if you haven't already. (Choose to run Desktop apps)
 
 
 ## Video
