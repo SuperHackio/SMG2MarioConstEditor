@@ -2,15 +2,18 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net7.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <Authors>Super Hackio</Authors>
     <Company>Super Hackio Incorporated</Company>
     <Description>MarioConst editor for SMG2. Also works for LuigiConst and YoshiConst</Description>
-    <Copyright>2022 Super Hackio Incorporated</Copyright>
+    <Copyright>2024 Super Hackio Incorporated</Copyright>
     <PackageId>SMG2MarioConstEditor</PackageId>
     <Product>SMG2 MarioConst Editor</Product>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
   </PropertyGroup>
 
 </Project>

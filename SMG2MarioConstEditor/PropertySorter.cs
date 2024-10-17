@@ -1,43 +1,39 @@
 using System.ComponentModel;
 
-namespace OrderedPropertyGrid
+namespace OrderedPropertyGrid;
+
+[AttributeUsage(AttributeTargets.Property)]
+public class OrderAttribute(int Order) : Attribute
 {
-    [AttributeUsage(AttributeTargets.Property)]
-    public class OrderAttribute : Attribute
-    {
-        public OrderAttribute(int Order) => this.Order = Order;
-        public int Order { get; set; }
-    }
+    public int Order { get; set; } = Order;
+}
 
-    public class OrderedCategoryAttribute : CategoryAttribute
-    {
-        private const char NonPrintableChar = '\t';
-        private const ushort MaxCategories = 100;
+public class OrderedCategoryAttribute(string category, ushort Order) : CategoryAttribute(category.PadLeft(category.Length + (MaxCategories - Order), NonPrintableChar))
+{
+    private const char NonPrintableChar = '\t';
+    private const ushort MaxCategories = 100;
+}
 
-        public OrderedCategoryAttribute(string category, ushort Order) : base(category.PadLeft(category.Length + (MaxCategories - Order), NonPrintableChar))
+public class PropertySorter : ExpandableObjectConverter
+{
+    public override bool GetPropertiesSupported(ITypeDescriptorContext? context) => true;
+
+    public override PropertyDescriptorCollection GetProperties(ITypeDescriptorContext? context, object? value, Attribute[]? attributes)
+    {
+        SortedSet<(int Order, string PropertyName)> SortedProperties = [];
+        if (value is null) //This should never happen...
+            return new PropertyDescriptorCollection(null, true); //Thanks .NET foundation
+
+        var PropertyDescriptorCollection = TypeDescriptor.GetProperties(value, attributes);
+
+        foreach (PropertyDescriptor PropertyDescriptor in PropertyDescriptorCollection)
         {
+            if (PropertyDescriptor.Attributes[typeof(OrderAttribute)] is OrderAttribute oa)
+                SortedProperties.Add((oa.Order, PropertyDescriptor.Name));
+            else
+                SortedProperties.Add((0, PropertyDescriptor.Name));
         }
-    }
 
-    public class PropertySorter : ExpandableObjectConverter
-    {
-        public override bool GetPropertiesSupported(ITypeDescriptorContext context) => true;
-
-        public override PropertyDescriptorCollection GetProperties(ITypeDescriptorContext context, object value, Attribute[] attributes)
-        {
-            var PropertyDescriptorCollection = TypeDescriptor.GetProperties(value, attributes);
-            SortedSet<(int Order, string PropertyName)> SortedProperties = new();
-
-            foreach (PropertyDescriptor PropertyDescriptor in PropertyDescriptorCollection)
-            {
-                var Attribute = PropertyDescriptor.Attributes[typeof(OrderAttribute)];
-                if (Attribute != null)
-                    SortedProperties.Add(((Attribute as OrderAttribute).Order, PropertyDescriptor.Name));
-                else
-                    SortedProperties.Add((0, PropertyDescriptor.Name));
-            }
-
-            return PropertyDescriptorCollection.Sort(SortedProperties.Select(x => x.PropertyName).ToArray());
-        }
+        return PropertyDescriptorCollection.Sort(SortedProperties.Select(x => x.PropertyName).ToArray());
     }
 }
